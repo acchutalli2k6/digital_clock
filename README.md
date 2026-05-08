@@ -1,6 +1,5 @@
 # digital_clock
 
-Built a digital clock using Verilog 2001 HDL on Xilinx Vivaldo
 Description:
 A synchronous digital clock implementation designed using Verilog 2001 and developed in Xilinx Vivado. This project features a hierarchical design that tracks hours, minutes, and seconds, including a testbench for verification.
 
