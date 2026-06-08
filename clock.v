@@ -22,25 +22,31 @@
 
 module digital_clock(
 input clk, input rst,
-output reg [5:0] min, sec,
-output reg [4:0] hr
+    output reg [6:0] min, sec,
+    output reg [5:0] hr
     );
-
+    reg [3:0] sec_ones, min_ones, hr_ones;
+    reg [2:0] sec_mins, min_tens;
+    reg [1:0] hr_tens;
 always @(posedge clk or negedge rst) begin
 if(!rst) begin hr<=0; min<=0; sec<=0; end
 else begin
-     if(sec==59) 
+    if(sec_ones==4'd9 && sec_tens==4'd5) 
         begin 
-        sec<=0; 
-        if(min==59) 
+            {sec_tens,sec_ones}<=0; 
+            if(min_ones==4'd9 && min_tens==4'd5) 
            begin 
-           min<=0;  
-              if(hr==23) hr<=0;
-              else hr<=hr+1;
+               {min_tens,min_ones}<=0; 
+               if(hr_ones==4'd3 && hr_tens==2'd2) {hr_tens, hr_ones}<=0;
+               else begin hr_ones<=hr_ones+1; 
+                   if(hr_ones==9) hr_tens<=hr_tens+1'b1; 
+               end
             end
-         else min<=min+1; 
+         else begin min_ones<=min_ones+1; 
+             if(min_ones==4'd9) min_tens<=min_tens+1'b1; end
          end
-         else sec<=sec+1;
+         else begin sec_ones<=sec_ones+1;
+             if(sec_ones==4'd9) sec_mins<=sec_mins+1'b1; end
     end
 end
 endmodule
