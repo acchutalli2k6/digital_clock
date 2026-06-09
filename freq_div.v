@@ -1,3 +1,25 @@
+`timescale 1s / 1s
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 08.06.2026 20:00:51
+// Design Name: 
+// Module Name: freq_div
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
 module freq_div #(
     parameter TARGET = 27'h2FAF07F // Default value for real hardware
 )(
