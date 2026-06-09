@@ -12,9 +12,3 @@ Modular Design: Separate counters for different time units.
 Simulation Ready: Includes a comprehensive testbench to verify transitions (e.g., 59 seconds to 1 minute).
 
 This repo contains the Verilog file and its testbench.
-
-Points to improve:
-
-To implement a frequency divider for the clock input, instead of defining it in the testbench.
-
-To display BCD output in the simulation or on the FPGA Board instead of hexadecimal numbers.
