@@ -15,5 +15,4 @@ This repo contains the Verilog file and its testbench.
 
 # Simulation results:
 
-
-<img width="581" height="257" alt="image" src="https://github.com/user-attachments/assets/63b9fcc5-8dda-4960-8da8-2c412bc9d055" />
+<img width="987" height="257" alt="image" src="https://github.com/user-attachments/assets/0554457f-b8bf-46f2-ab9b-4c416e752faf" />
