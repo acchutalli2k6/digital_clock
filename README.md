@@ -1,4 +1,4 @@
-# digital_clock
+# Digital_Clock
 
 Description:
 A synchronous digital clock implementation designed using Verilog 2001 and developed in Xilinx Vivado. This project features a hierarchical design that tracks hours, minutes, and seconds, including a testbench for verification.
@@ -12,3 +12,4 @@ Modular Design: Separate counters for different time units.
 Simulation Ready: Includes a comprehensive testbench to verify transitions (e.g., 59 seconds to 1 minute).
 
 This repo contains the Verilog file and its testbench.
+<img width="581" height="257" alt="image" src="https://github.com/user-attachments/assets/63b9fcc5-8dda-4960-8da8-2c412bc9d055" />
